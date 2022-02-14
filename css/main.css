@@ -1,0 +1,279 @@
+/* mobile */
+
+/* desktop */
+@media (max-width:1440px)
+{
+
+}
+/* start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right:auto;
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+/* end global rules */
+/* start shapes */
+.content{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:1440px){
+.content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 30%;
+    height: 90%;
+    background-image: linear-gradient(to left bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 0px 0px 220px 200px;
+    -webkit-border-radius: 0px 0px 220px 200px;
+    -moz-border-radius: 0px 0px 220px 200px;
+    -ms-border-radius: 0px 0px 220px 200px;
+    -o-border-radius: 0px 0px 220px 200px;
+    z-index: -1;
+
+}
+.content::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    width: 30%;
+    height: 90%;
+    background-image: linear-gradient(to left bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius:  220px 200px 0px 0px ;
+    -webkit-border-radius:  220px 200px 0px 0px ;
+    -moz-border-radius:  220px 200px 0px 0px ;
+    -ms-border-radius:  220px 200px 0px 0px ;
+    -o-border-radius:  220px 200px 0px 0px ;
+    opacity: 3%;
+    z-index: -1;
+}
+/* end shapes */
+/* start phone */
+.content  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+.content  .container .phone{
+    width: 20%;
+    height: 600px;
+    background-color: hsl(270, 20%, 96%);
+    left: 0%;
+    border: solid white 10px;
+    border-radius: 30px;
+    box-shadow: 19px 20px 20px 5px hsl(270deg 20% 97%);
+    position: relative;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    overflow: hidden;
+}
+.content .container .phone::after{
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: 55px;
+    width: 55%;
+    height: 30px;
+    background-color: white;
+    border-radius: 60px;
+}
+.content .container .text{
+    width: 30%;
+}
+.content .container .text h2{
+    margin-bottom: 25px;
+    color: hsl(271, 36%, 24%);
+}
+.content .container .text p{
+    color: hsl(270, 7%, 64%);
+    line-height: 1.6;
+}
+/* end phone */
+/* start chat head */
+.content .container .phone .chat-head{
+    position: relative;
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    height: 15%;
+    border-radius: 0 0 10px 10px;
+}
+.content .container .chat-head img{
+    width: 35px;
+    border: solid white 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: 42%;
+    left: 14%;
+}
+.content .container .chat-head h2{
+    position: absolute;
+    top: 45%;
+    left: 31%;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+}
+.content .container .chat-head p{
+    position: absolute;
+    top: 73%;
+    left: 31%;
+    font-size: 10px;
+    color: hsl(206, 6%, 79%);
+}
+.content .container .chat-head .fa-chevron-left{
+    position: absolute;
+    left: 20px;
+    top: 55%;
+    color: white;
+    font-size: 15px;
+}
+.content .container .chat-head .fa-ellipsis-vertical{
+    position: absolute;
+    right: 20px;
+    color: white;
+    top: 55%;
+}
+/* end chat head */
+/* start message */
+.content .phone .message .left{
+    font-size: 10px;
+    width: 65%;
+    border-radius: 15px 15px 15px 2px;
+    padding: 11px;
+    background-color: hsl(276, 55%, 94%);
+    color: hsl(276, 55%, 52%);
+    margin: 10px 8px;
+    -webkit-border-radius: 15px 15px 15px 2px;
+    -moz-border-radius: 15px 15px 15px 2px;
+    -ms-border-radius: 15px 15px 15px 2px;
+    -o-border-radius: 15px 15px 15px 2px;
+}
+.content .phone .message .imgs{
+    display: flex;
+    width: 25%;
+    margin: 10px 104px;
+}
+.content .phone .message .imgs img{
+    width: 45px;
+    margin-right: 7px;
+    border-radius: 10px;
+}
+.content .phone .message .right {
+    width: 63%;
+    font-size: 10px;
+    margin: 10px 89px;
+    background-color: white;
+    padding: 10px;
+    color: hsl(270, 7%, 64%);
+    border-radius: 15px 15px 2px 15px;
+    box-shadow: 2px 2px 20px 0px hsl(270deg 7% 85%);
+    -webkit-border-radius: 15px 15px 2px 15px;
+    -moz-border-radius: 15px 15px 2px 15px;
+    -ms-border-radius: 15px 15px 2px 15px;
+    -o-border-radius: 15px 15px 2px 15px;
+}
+.content .phone .message .small{
+    width: 40%;
+    margin: 10px 147px;
+}
+.content .phone .message .price{
+    padding: 12px;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    margin: 10px 8px;
+    border-radius: 15px 15px 15px 2px;
+    width: 70%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    align-items: center;
+}
+.content .phone .message .price::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 10px;
+    top: 34%;
+    border: solid hsl(0, 0%, 100%) 1px;
+}
+.content .phone .message .price span:nth-child(1){
+    color:hsl(0, 0%, 100%);
+    font-size: 9px;
+}
+.content .phone .message .price span:nth-child(2){
+    font-size: 12px;
+}
+.content .phone .message form{
+    /* margin: 20px 22px; */
+    position: relative;
+
+}
+.content .phone .message form input[type="text"]{
+    width: 90%;
+    padding: 19px;
+    border-radius: 30px;
+    margin: 3px 11px;
+    font-size: 13px;
+    border: none;
+}
+.content .phone .message form input[type="text"]::placeholder{
+    color: hsl(206, 6%, 79%);
+}
+.content .phone .message form i{
+    position: absolute;
+    right: 22px;
+    top: 12px;
+    font-size: 33px;
+    color: hsl(271, 36%, 24%);
+}
+/* end message */
+}
+@media (max-width:769px){
+    .content::before,
+    .content::after
+    {
+    width: 55%;
+    height: 55%;
+    }
+    .content  .container .phone{
+        width: 80%;
+    }
+    .content .container .text{
+        width: 80%;
+        text-align: center;
+    }
+}
